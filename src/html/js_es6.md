@@ -119,7 +119,7 @@ console.log("2pi = " + sum(pi, pi))
 
 ```javascript
 // Itération sur les valeurs
-for (let n of fibonacci) {
+for (let n of [1, 2, 3, 4, 5]) {
     if (n > 1000)  break
     console.log(n)
 }
@@ -203,7 +203,7 @@ Package.json
 jQuery est devenu inutile ? NON
 
 * bootstrap
-* multitudes de plugins
+* multitudes de plugins (datepicker, datatable...)
 
 Avantages :
 
