@@ -3,7 +3,7 @@
         "name": "Git",
         "id": "git-modal",
         "description": "Git explained with beginer and advanced tutorial.",
-        "path_modal": "src/html/git.html",
+        "path_modal": "src/html/git.md",
         "path_image_portfolio": "img/portfolio/git.png"
     },
     "es6": {
