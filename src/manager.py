@@ -1,5 +1,5 @@
 import json
-
+from subprocess import call
 
 def build_template():
     path = "src/template/"
@@ -26,7 +26,13 @@ def build_template():
     # Build tuto
     for data in tuto_data.values():
         all_tuto_html += block_template.format(**data)
-        with open(data["path_modal"]) as ff:
+        path = data["path_modal"]
+        if path.endswith(".md"):
+            # Convert md to html
+            out_path =  path[:-2] + "html"
+            call(["pandoc", path, "-o", out_path])
+            path = out_path
+        with open(path) as ff:
             modal_html = ''.join(ff.readlines())
         all_modal_html += block_modal.format(id=data["id"], type="tutorial",
                                              html=modal_html)
@@ -34,7 +40,14 @@ def build_template():
     # Build tuto
     for data in projects_data.values():
         all_project_html += block_template.format(**data)
-        with open(data["path_modal"]) as ff:
+        path = data["path_modal"]
+        if path.endswith(".md"):
+            # Convert md to html
+            print("convert md")
+            out_path =  path[:-2] + "html"
+            call(["pandoc", path, "-o", out_path])
+            path = out_path
+        with open(path) as ff:
             modal_html = ''.join(ff.readlines())
         all_modal_html += block_modal.format(id=data["id"], type="project",
                                              html=modal_html)
