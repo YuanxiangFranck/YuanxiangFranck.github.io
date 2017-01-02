@@ -30,7 +30,7 @@ def build_template():
         path = data["path_modal"]
         if path.endswith(".md"):
             # Convert md to html
-            out_path =  path[:-2] + "html"
+            out_path = path[:-2] + "html"
             call(["pandoc", path, "-o", out_path])
             path = out_path
         with open(path) as ff:
@@ -44,8 +44,7 @@ def build_template():
         path = data["path_modal"]
         if path.endswith(".md"):
             # Convert md to html
-            print("convert md")
-            out_path =  path[:-2] + "html"
+            out_path = path[:-2] + "html"
             call(["pandoc", path, "-o", out_path])
             path = out_path
         with open(path) as ff:

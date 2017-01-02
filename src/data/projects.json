@@ -3,14 +3,14 @@
         "name": "X3DOM Plugins API",
         "id": "x3dom-modal",
         "description": "A plugins API for the X3DOM library",
-        "path_modal": "src/html/x3dom.html",
+        "path_modal": "src/md/x3dom.md",
         "path_image_portfolio": "img/portfolio/x3dom.png"
     },
     "driversiti": {
         "name": "driversiti",
         "id": "driversiti-modal",
         "description": "Data Analytics website of Driversiti",
-        "path_modal": "src/html/driversiti.html",
+        "path_modal": "src/md/driversiti.md",
         "path_image_portfolio": "img/portfolio/driversiti.png"
     }
 }

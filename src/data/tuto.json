@@ -3,21 +3,21 @@
         "name": "Git",
         "id": "git-modal",
         "description": "Git explained with beginer and advanced tutorial.",
-        "path_modal": "src/html/git.md",
+        "path_modal": "src/md/git.md",
         "path_image_portfolio": "img/portfolio/git.png"
     },
     "es6": {
         "name": "Modern JavaScript with ES6",
         "id": "es6-modal",
         "description": "Speed talk about ES6",
-        "path_modal": "src/html/js_es6.md",
+        "path_modal": "src/md/js_es6.md",
         "path_image_portfolio": "img/portfolio/es6.png"
     },
     "emacs": {
         "name": "EMACS",
         "id": "emacs-modal",
         "description": "Discovering Coding IDE EMACS",
-        "path_modal": "src/html/emacs.md",
+        "path_modal": "src/md/emacs.md",
         "path_image_portfolio": "img/portfolio/emacs.png"
     }
 }
