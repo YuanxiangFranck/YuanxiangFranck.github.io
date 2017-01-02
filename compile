@@ -1,0 +1,1 @@
+pandoc -s -t beamer -V beamerarticle:true  js_es6.md -o js_es6.pdf
