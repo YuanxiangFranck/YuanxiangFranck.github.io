@@ -31,7 +31,9 @@ def build_template():
         if path.endswith(".md"):
             # Convert md to html
             out_path = path[:-2] + "html"
-            call(["pandoc", path, "-o", out_path])
+            call(["pandoc", path,
+                  "-f" , "markdown-markdown_in_html_blocks-native_divs",
+                  "-o", out_path])
             path = out_path
         with open(path) as ff:
             modal_html = ''.join(ff.readlines())
