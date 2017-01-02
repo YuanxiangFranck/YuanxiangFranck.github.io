@@ -17,7 +17,7 @@
         "name": "EMACS",
         "id": "emacs-modal",
         "description": "Discovering Coding IDE EMACS",
-        "path_modal": "src/html/emacs.html",
+        "path_modal": "src/html/emacs.md",
         "path_image_portfolio": "img/portfolio/emacs.png"
     }
 }
