@@ -1,6 +1,7 @@
 import json
 from subprocess import call
 
+
 def build_template():
     path = "src/template/"
 
@@ -16,7 +17,7 @@ def build_template():
         projects_data = json.loads("".join(f_proj.readlines()))
         tuto_data = json.loads("".join(f_tuto.readlines()))
 
-    
+
     # Initialize html code for each template
     all_modal_html = ""
     all_project_html = ""
