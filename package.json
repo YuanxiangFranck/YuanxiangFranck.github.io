@@ -8,6 +8,7 @@
     "server": "python -m SimpleHTTPServer ",
     "watch": "watchify  src/js/index.js -o bundle.js -v --debug -t [ babelify --presets [ es2015 ] ]",
     "build": "browserify js/index.js -v -t [ babelify --presets [ es2015 ] ] | uglifyjs -mcv > bundle.js",
+    "build_html": "python src/manager.py",
     "start": "npm run server | npm run watch"
   },
   "repository": {
